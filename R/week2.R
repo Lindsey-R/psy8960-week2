@@ -7,5 +7,5 @@ rt_df$gender <- factor(rt_df$gender, levels = c("M", "F", "N"), labels = c("Male
 mean(rt_df$rt)
 rt_f_df <- rt_df[rt_df$gender == "Female", c(1:3)]
 hist(rt_f_df$rt)
-datasets <- c(rt_df, rt_f_df)
-datasets[[1]]
+datasets <- list(rt_df, rt_f_df)
+datasets[[1]][2]
